@@ -25,7 +25,7 @@ We can determine the fraction of data we want to use.
 
 Next, we create independent and Dependent Features, X contains all the columns except "class" which is our target variable and Y contains the "class" variable.
 
-We use Isolation Forest algorith and Local Outlier Factor(LOF) Algorithm for our data.
+We use Isolation Forest algorithm and Local Outlier Factor(LOF) Algorithm for our data.
 How Isolation Forests Work The Isolation Forest algorithm isolates observations by randomly selecting a feature and then randomly selecting a split value between the maximum and minimum values of the selected feature. The logic argument goes: isolating anomaly observations is easier because only a few conditions are needed to separate those cases from the normal observations. On the other hand, isolating normal observations require more conditions. Therefore, an anomaly score can be calculated as the number of conditions required to separate a given observation.
 The way that the algorithm constructs the separation is by first creating isolation trees, or random decision trees. Then, the score is calculated as the path length to isolate the observation.
 
